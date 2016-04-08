@@ -5,4 +5,14 @@
         <menu-item name="person" title="Person"><link target="Person"/></menu-item>
         <menu-item name="personForm" title="Person Form"><link target="PersonForm"/></menu-item>
     </menu>
+
+    <menu name="EventMenu" default-menu-item-name="eventMinilang" default-selected-style="selected"
+          type="simple" menu-container-style="button-bar button-style-1" selected-menuitem-context-field-name="headerItem">
+        <menu-item name="eventMinilang" title="Create Person --- Event MiniLang">
+            <link target="createPracticePersonSimpleEvent"/>
+        </menu-item>
+        <menu-item name="eventJava" title="Create Person --- Event Java">
+            <link target="createPracticePersonJavaEvent"/>
+        </menu-item>
+    </menu>
 </menus>

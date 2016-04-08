@@ -3,6 +3,24 @@
 <services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
     <description>Practice Services</description>
+    <service name="createPracticeParty" default-entity-name="Party" engine="simple"
+             location="component://practice/script/net/novisoft/practice/PracticeServices.xml" invoke="createPracticeParty" auth="true">
+        <description>Create a Party</description>
+        <auto-attributes include="pk" mode="OUT" optional="false"/>
+        <auto-attributes include="nonpk" mode="IN" optional="true"/>
+    </service>
+    <service name="updatePracticeParty" default-entity-name="Party" engine="simple"
+             location="component://practice/script/net/novisoft/practice/PracticeServices.xml" invoke="updatePracticeParty" auth="true">
+        <description>Update a Party</description>
+        <auto-attributes include="pk" mode="IN" optional="false"/>
+        <auto-attributes include="nonpk" mode="IN" optional="true"/>
+    </service>
+    <service name="deletePracticeParty" default-entity-name="Party" engine="simple"
+             location="component://practice/script/net/novisoft/practice/PracticeServices.xml" invoke="deletePracticeParty" auth="true">
+        <description>Delete a Party</description>
+        <auto-attributes include="pk" mode="IN" optional="false"/>
+    </service>
+
     <service name="createPracticePerson" default-entity-name="Person" engine="simple"
              location="component://practice/script/net/novisoft/practice/PracticeServices.xml" invoke="createPracticePerson" auth="true">
         <description>Create a Person</description>
