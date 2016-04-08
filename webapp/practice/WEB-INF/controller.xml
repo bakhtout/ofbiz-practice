@@ -35,11 +35,26 @@
         <response name="success" type="view" value="PersonForm"/>
         <response name="error" type="view" value="PersonForm"/>
     </request-map>
+    <request-map uri="createPracticePersonSimpleEvent">
+        <security https="true" auth="true"/>
+        <event type="simple" path="net/novisoft/practice/PracticeEvents.xml" invoke="createPracticePersonSimpleEvent"/>
+        <response name="success" type="view" value="CreatePracticePersonEventM"/>
+        <response name="error" type="view" value="CreatePracticePersonEventM"/>
+    </request-map>
+    <request-map uri="createPracticePersonJavaEvent">
+        <security https="true" auth="true"/>
+        <event type="java" path="net.novisoft.practice.PracticeEvents" invoke="createPracticePersonJavaEvent"/>
+        <response name="success" type="view" value="CreatePracticePersonEventJ"/>
+        <response name="error" type="view" value="CreatePracticePersonEventJ"/>
+    </request-map>
     <!-- end of request mappings -->
     <!-- View Mappings -->
     <view-map name="main" type="screen" page="component://practice/widget/PracticeScreens.xml#main"/>
     <view-map name="Person" type="screen" page="component://practice/widget/PracticeScreens.xml#Person"/>
     <view-map name="PersonForm" type="screen" page="component://practice/widget/PracticeScreens.xml#PersonForm"/>
+    <view-map name="CreatePracticePersonEventM" type="screen" page="component://practice/widget/PracticeScreens.xml#CreatePracticePersonEventM"/>
+    <view-map name="CreatePracticePersonEventJ" type="screen" page="component://practice/widget/PracticeScreens.xml#CreatePracticePersonEventJ"/>
+
     <!-- change the path to the following if the above doesn't work for you -->
     <!-- <view-map name="main" type="screen" page="component://practice/webapp/practice/widget/PracticeScreens.xml#main"/> -->
 

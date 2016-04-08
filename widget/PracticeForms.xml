@@ -17,4 +17,13 @@
         <field name="submitButton" title="${uiLabelMap.CommonCreate}" widget-style="smallSubmit"><submit button-type="button"/></field>
     </form>
 
+    <form name="CreatePersonSimpleForm" type="single" target="createPracticePersonSimpleEvent">
+        <auto-fields-service service-name="createPracticePerson"/>
+        <field name="submitButton" title="${uiLabelMap.CommonCreate}" widget-style="smallSubmit"><submit button-type="button"/></field>
+    </form>
+    <form name="CreatePersonJavaForm" type="single" target="createPracticePerson">
+        <auto-fields-service service-name="createPracticePerson"/>
+        <field name="submitButton" title="${uiLabelMap.CommonCreate}" widget-style="smallSubmit"><submit button-type="button"/></field>
+    </form>
+
 </forms>

@@ -53,4 +53,40 @@
             </widgets>
         </section>
     </screen>
+
+    <screen name="CreatePracticePersonEventM">
+        <section>
+            <actions>
+                <set field="headerItem" value="eventMinilang"/>
+                <set field="titleProperty" value="PageTitleSimpleEventForms"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="CommonPracticeDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <include-menu location="component://practice/widget/PracticeMenus.xml" name="EventMenu"/>
+                        <label text="New Person --- Simple Event" style="h1"/>
+                        <include-form name="CreatePersonSimpleForm" location="component://practice/widget/PracticeForms.xml"/>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="CreatePracticePersonEventJ">
+        <section>
+            <actions>
+                <set field="headerItem" value="eventJava"/>
+                <set field="titleProperty" value="PageTitleJavaEventForms"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="CommonPracticeDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <include-menu location="component://practice/widget/PracticeMenus.xml" name="EventMenu"/>
+                        <label text="New Person --- Java Event" style="h1"/>
+                        <include-form name="CreatePersonJavaForm" location="component://practice/widget/PracticeForms.xml"/>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
 </screens>

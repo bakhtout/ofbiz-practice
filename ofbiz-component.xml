@@ -6,6 +6,7 @@
 
     <classpath type="dir" location="config"/>
     <classpath type="dir" location="script"/>
+    <classpath type="jar" location="build/lib/*"/>
 
     <entity-resource type="data" reader-name="demo" loader="main" location="data/PracticeData.xml"/>
 
