@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- Practice component properties -->
+    <property key="PracticeApplication">
+        <value xml:lang="ar">هذا أول تمرين</value>
+        <value xml:lang="en">This is first practice</value>
+        <value xml:lang="fr">c'est une première pratique</value>
+    </property>
+    <property key="PracticeCompanyName">
+        <value xml:lang="ar">هذا أول تمرين</value>
+        <value xml:lang="en">This is first practice</value>
+        <value xml:lang="fr">c'est une première pratique</value>
+    </property>
+    <!-- Page Titles -->
+    <property key="PageTitlePracticeMain">
+        <value xml:lang="ar">هذا أول تمرين</value>
+        <value xml:lang="en">This is first practice</value>
+        <value xml:lang="fr">c'est une première pratique</value>
+    </property>
+    <property key="PageTitlePracticePerson">
+        <value xml:lang="ar">هذا أول تمرين</value>
+        <value xml:lang="en">This is first practice</value>
+        <value xml:lang="fr">c'est une première pratique</value>
+    </property>
+    <property key="PageTitlePracticePersonForm">
+        <value xml:lang="ar">هذا أول تمرين</value>
+        <value xml:lang="en">This is first practice</value>
+        <value xml:lang="fr">c'est une première pratique</value>
+    </property>
+    
+</resource>
