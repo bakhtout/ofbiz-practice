@@ -5,6 +5,11 @@
     <resource-loader   name="main" type="component"/>
 
     <classpath type="dir" location="config"/>
+    <classpath type="dir" location="script"/>
+
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/PracticeData.xml"/>
+
+    <service-resource type="model" loader="main" location="servicedef/services.xml"/>
 
 
     <webapp name="practice"

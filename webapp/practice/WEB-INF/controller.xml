@@ -17,6 +17,24 @@
         <security https="false" auth="true"/>
         <response name="success" type="view" value="PersonForm"/>
     </request-map>
+    <request-map uri="createPracticePerson">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createPracticePerson"/>
+        <response name="success" type="view" value="PersonForm"/>
+        <response name="error" type="view" value="PersonForm"/>
+    </request-map>
+    <request-map uri="updatePracticePerson">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="updatePracticePerson"/>
+        <response name="success" type="view" value="PersonForm"/>
+        <response name="error" type="view" value="PersonForm"/>
+    </request-map>
+    <request-map uri="deletePracticePerson">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="deletePracticePerson"/>
+        <response name="success" type="view" value="PersonForm"/>
+        <response name="error" type="view" value="PersonForm"/>
+    </request-map>
     <!-- end of request mappings -->
     <!-- View Mappings -->
     <view-map name="main" type="screen" page="component://practice/widget/PracticeScreens.xml#main"/>
