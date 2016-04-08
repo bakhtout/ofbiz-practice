@@ -3,8 +3,16 @@
          xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
     <screen name="main">
         <section>
+            <actions>
+                <set field="headerItem" value="main"/>
+                <set field="titleProperty" value="PageTitlePracticeMain"/>
+            </actions>
             <widgets>
-                <label text="This is first practice"/>
+                <decorator-screen name="CommonPracticeDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <label text="${uiLabelMap.PracticeApplication}"/>
+                    </decorator-section>
+                </decorator-screen>
             </widgets>
         </section>
     </screen>
@@ -23,6 +31,23 @@
                                 <html-template location="component://practice/webapp/practice/person.ftl"/>
                             </html>
                         </platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="PersonForm">
+        <section>
+            <actions>
+                <set field="headerItem" value="personForm"/>
+                <set field="titleProperty" value="PageTitlePracticePersonForm"/>
+                <entity-condition entity-name="Person" list="persons"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="CommonPracticeDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <label text="Person List" style="h2"/>
+                        <include-form name="ListPersons" location="component://practice/widget/PracticeForms.xml"></include-form>
                     </decorator-section>
                 </decorator-screen>
             </widgets>

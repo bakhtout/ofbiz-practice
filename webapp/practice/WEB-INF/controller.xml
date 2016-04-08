@@ -13,10 +13,15 @@
         <security https="false" auth="true"/>
         <response name="success" type="view" value="Person"/>
     </request-map>
+    <request-map uri="PersonForm">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="PersonForm"/>
+    </request-map>
     <!-- end of request mappings -->
     <!-- View Mappings -->
     <view-map name="main" type="screen" page="component://practice/widget/PracticeScreens.xml#main"/>
     <view-map name="Person" type="screen" page="component://practice/widget/PracticeScreens.xml#Person"/>
+    <view-map name="PersonForm" type="screen" page="component://practice/widget/PracticeScreens.xml#PersonForm"/>
     <!-- change the path to the following if the above doesn't work for you -->
     <!-- <view-map name="main" type="screen" page="component://practice/webapp/practice/widget/PracticeScreens.xml#main"/> -->
 

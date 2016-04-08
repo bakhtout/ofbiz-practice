@@ -3,11 +3,15 @@
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-component.xsd">
     <resource-loader   name="main" type="component"/>
+
+    <classpath type="dir" location="config"/>
+
+
     <webapp name="practice"
             title="Practice"
             server="default-server"
             base-permission="OFBTOOLS"
             location="webapp/practice"
             mount-point="/practice"
-            app-bar-display="false"/>
+            app-bar-display="true"/>
 </ofbiz-component>
